@@ -1,0 +1,10 @@
+#!/bin/bash
+IFS=""
+
+for zip in $*
+do 
+  mkdir "${zip%.zip}" 
+  cd "${zip%.zip}" 
+  unzip "../${zip}" 
+  cd .. 
+done
