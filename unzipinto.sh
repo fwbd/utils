@@ -1,4 +1,6 @@
 #!/bin/bash
+# unpack zip into a directory created from the file name
+
 IFS=""
 
 for zip in $*

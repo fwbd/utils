@@ -1,5 +1,0 @@
-#!/bin/bash
-for fl in $@;
- do tar -I lbzip2 -cvf ${fl%/}.tar.bz2 ${fl};
-done
-
