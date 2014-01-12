@@ -8,6 +8,6 @@ if command -v lbzip2 >/dev/null 2>&1; then
 fi
 
 for fl in $@;
- do tar$LBZIP -cvf ${fl%/}.tar.bz2 ${fl} && rm -r ${fl};
+ do tar$LBZIP -cvf ${fl%/}.tar.bz2 ${fl} && rm -rf ${fl};
 done
 
